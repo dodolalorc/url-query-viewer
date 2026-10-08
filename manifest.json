@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "URL Query Viewer",
+  "version": "1.0.0",
+  "description": "查看并复制当前页面 URL 中的查询参数。",
+  "permissions": ["activeTab", "clipboardWrite"],
+  "action": {
+    "default_title": "查看 URL 参数",
+    "default_popup": "popup.html"
+  }
+}

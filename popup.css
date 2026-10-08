@@ -1,0 +1,45 @@
+:root {
+  color: #162038;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f7f8fc;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; width: 410px; min-height: 280px; }
+
+.panel { padding: 20px; }
+
+.header, .section-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+
+.header { margin-bottom: 18px; }
+
+.eyebrow { margin: 0 0 4px; color: #77809a; font-size: 10px; font-weight: 800; letter-spacing: .12em; }
+
+h1 { margin: 0; font-size: 22px; letter-spacing: -.04em; }
+
+button { border: 0; font: inherit; cursor: pointer; }
+
+.copy-url { border-radius: 9px; padding: 9px 12px; background: #253cdd; color: white; font-size: 12px; font-weight: 700; transition: background .15s, transform .15s; }
+.copy-url:hover { background: #182bb9; }
+.copy-url:active { transform: scale(.97); }
+
+.url-card { margin-bottom: 20px; border: 1px solid #dfe3ef; border-radius: 12px; padding: 12px 13px; background: #fff; overflow: hidden; }
+.url-host { margin: 0; color: #2734a7; font-size: 13px; font-weight: 750; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.url-path { margin: 5px 0 0; color: #747d94; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.section-heading { margin-bottom: 9px; color: #59627c; font-size: 12px; font-weight: 750; }
+.count { display: grid; min-width: 22px; height: 22px; place-items: center; border-radius: 99px; background: #e8eafe; color: #3948bd; font-size: 11px; }
+
+.params { display: grid; gap: 8px; max-height: 400px; overflow-y: auto; padding-right: 2px; }
+.param { display: grid; grid-template-columns: minmax(95px, .8fr) minmax(0, 1.2fr) 30px; align-items: center; gap: 9px; min-height: 50px; border: 1px solid #e1e4ee; border-radius: 10px; padding: 8px 7px 8px 11px; background: #fff; }
+.key, .value { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.key { color: #33415f; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; font-weight: 700; }
+.value { color: #66708a; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+.copy-param { width: 30px; height: 30px; border-radius: 7px; background: #f0f2f8; color: #56617d; font-size: 14px; }
+.copy-param:hover { background: #dfe4ff; color: #2639c7; }
+
+.empty { border: 1px dashed #ced4e2; border-radius: 10px; padding: 25px 12px; color: #747d94; text-align: center; font-size: 13px; line-height: 1.5; }
+.error { color: #a33944; }
+.toast { position: fixed; bottom: 14px; left: 50%; z-index: 2; max-width: 300px; transform: translate(-50%, 16px); border-radius: 20px; padding: 8px 13px; background: #17213b; color: #fff; opacity: 0; pointer-events: none; font-size: 12px; font-weight: 650; transition: opacity .18s, transform .18s; }
+.toast.visible { opacity: 1; transform: translate(-50%, 0); }

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL 参数</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="panel">
+      <header class="header">
+        <div>
+          <p class="eyebrow">CURRENT PAGE</p>
+          <h1>URL 参数</h1>
+        </div>
+        <button id="copy-url" class="copy-url" type="button" title="复制完整 URL">复制 URL</button>
+      </header>
+
+      <section class="url-card" aria-label="当前 URL">
+        <p id="url-host" class="url-host">正在读取页面…</p>
+        <p id="url-path" class="url-path"></p>
+      </section>
+
+      <section class="params-section">
+        <div class="section-heading">
+          <span>查询参数</span>
+          <span id="param-count" class="count">0</span>
+        </div>
+        <div id="params" class="params" aria-live="polite"></div>
+      </section>
+    </main>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
